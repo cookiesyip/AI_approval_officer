@@ -31,7 +31,7 @@ python cleansing.py
 
 The result should be in the following format. You can change the ratio of images in train/test/valid in the "cleansing.py"
 
-├── yolov8_dataset
+└── yolov8_dataset
 
 	└── train
  
