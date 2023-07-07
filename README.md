@@ -15,13 +15,13 @@ python pdf2image.py
 ## Data cleansing
 
 Before data cleansing, please make sure your files are sorted in the following format(here we will use our dataset for instance):
-
+```
 title
 
 	└─images (folder including all images)
  
 	└─labels (folder including all labels)
-
+```
 (for label files. please refer to the following section "Data labeling")
 
 then, run the code:
@@ -30,7 +30,7 @@ python cleansing.py
 ```
 
 The result should be in the following format. You can change the ratio of images in train/test/valid in the "cleansing.py"
-
+```
 └── yolov8_dataset
 
 	└── train
@@ -50,7 +50,7 @@ The result should be in the following format. You can change the ratio of images
 		└── images (folder including all testing images)
   
 		└── labels (folder including all testing labels)
-
+```
 ## Data labeling
 
 You may get confused where the labeled files come from, here is the entire process:
