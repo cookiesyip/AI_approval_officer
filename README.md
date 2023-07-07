@@ -16,7 +16,7 @@ python pdf2image.py
 
 Before data cleansing, please make sure your files are sorted in the following format(here we will use our dataset for instance):
 ```
-title
+└─title
 
 	└─images (folder including all images)
  
