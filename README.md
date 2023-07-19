@@ -128,3 +128,10 @@ yolo task=detect mode=predict model=runs/detect/train*/weights/best.pt source=da
 ```
 
 please change the path of "source"
+
+## How to DIY your own dataset?
+we have uploaded "merge.py" for your reference.
+
+Here we use 4 kinds of "original.png" as background, and stick different types of ticks(which are saved in folder "ticks") to it. you can refer to "merge.py" for details and improve it for your own case.
+
+Remember the maximum number if images generated in one turn is 40, you should shut down the document and rerun it if it meets the maximum.
