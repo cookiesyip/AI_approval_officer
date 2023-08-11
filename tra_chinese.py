@@ -75,7 +75,7 @@ def divide(image_dir, root_dir): #for us, /ocr_dara/tra-chinese/data/orig ; /pad
         # copy image files
         src_image_path = os.path.join(image_dir, filename)
         dst_image_path = os.path.join(output_image_dir, filename)
-        shutil.copy(src_image_path, dst_image_path) #将源文件的内容复制到目标文件或目录
+        shutil.copy(src_image_path, dst_image_path) 
      
 
 #at the end 
