@@ -11,19 +11,19 @@ def label(root_dir,mode):
     labelname ='rec_gt_'+mode+'.txt'
     save = os.path.join(ROOT_PATH, labelname)  # /home/lokhiufung/PaddleOCR/both/rec_gt_train.txt
     with open(save,'w') as txt: 
+        
         for img in os.listdir(folder):
+            
             if img[1]=='_': #it is a traditional chinese character
                 cha = img.split('.')[0][0]
-                label=os.path.join('train',  img) + '\t' + cha + '\n' #eg.   train/1.png  用
+                label=os.path.join(mode,  img) + '\t' + cha + '\n' #eg.   train/1.png  用
                 txt.write(label)        
    
             else: 
                 cha = img.split('_')[1]
-                label=os.path.join('train',  img) + '\t' + str(base64.b16decode(cha.upper()).decode()) + '\n' #eg. train/4a_/...;.png  K
+                label=os.path.join(mode,  img) + '\t' + str(base64.b16decode(cha.upper()).decode()) + '\n' #eg. train/4a_/...;.png  K
                 txt.write(label)  
-
-    txt.close()
-
+            
 
 if __name__=='__main__':
 
